@@ -1,0 +1,21 @@
+<!-- Overrides page with default layout.html template-->
+{% extends "layout.html" %}
+
+<form action="{{ url_for('contact') }}" method="POST">
+    {{ form.hidden_tag()}}
+
+    {{ form.name.label }}
+    {{ form.name }}
+
+    {{ form.email.label }}
+    {{ form.email }}
+
+    {{ form.subject.label }}
+    {{ form.subject }}
+
+    {{ form.message.label }}
+    {{ form.message }}
+
+    {{ form.submit }}
+</form>
+
