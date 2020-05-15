@@ -9,7 +9,7 @@
         <meta name="Description" content="Willie David Jones III personal website. Bio and contact info.">
         <title>Willie David Jones III</title>
         <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100&display=swap" rel="stylesheet">
         <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -64,7 +64,7 @@
             <div class="header rowpad" id="about">
                 <div class="row">
                     <div class="col-sm-4">
-                        <div class="img-header">
+                        <div class="img-header text-center">
                             <a href="home"><img class="img-fluid" src="/static/headshot.png" width="226" height="256"></a>
                         </div>
                     </div>
@@ -143,7 +143,7 @@
                     </div>
                     <div class="col-sm-8">
                         <div class="inner-div">
-                            <a class="inner-link" href="http://williedavidjonesiii.com" target="_blank">Willie David Jones III</a>
+                            <a class="inner-link text-nowrap" href="http://williedavidjonesiii.com" target="_blank">Willie David Jones III</a>
                             <p>A minimal single-page app portfolio built on Flask, Python, Bootstrap, JavaScript and Jinja.  </p>
                             <p>🔗 <a class="" href="http://williedavidjonesiii.com" target="_blank">http://williedavidjonesiii.com</a></p>
                             <a class="btn btn-light" href="https://github.com/wjone005/portfolio" target="_blank" role="button"><i class="fab fa-github"></i> Github Source Code</a>
@@ -187,11 +187,11 @@
             </section>
             <div class="solid-line" id="contact"></div>
             <section>
-                <div class="contact col-auto" >
+                <div class="contact" >
                     {% block contact %}
                         <h4 class="left-row-text" style="text-align: center;"> Contact Me </h4>
 
-                        <form class="form-center" novalidate  action="{{ url_for('home') }}" method="POST" name="contact" role="form"> 
+                        <form class="justify-content-center" novalidate  action="{{ url_for('home') }}" method="POST" name="contact" role="form"> 
                             {{ form.hidden_tag() }}
 
                             <div class="form-group">
