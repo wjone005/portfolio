@@ -9,7 +9,8 @@
         <meta name="Description" content="Willie David Jones III personal website. Bio and contact info.">
         <title>Willie David Jones III</title>
         <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" type="image/jpg" href="/static/fav.png"/>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100&display=swap" rel="stylesheet">
         <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -21,6 +22,9 @@
         
           gtag('config', 'UA-66422434-5');
         </script>
+
+        
+
         <link rel="stylesheet" href="/static/fancy.css">
     </head>
     <body>
@@ -39,13 +43,13 @@
                     <a class="nav-link" href="#about">About <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#experience">Experience</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#projects" >Projects</a>
-                </li>
-                <li class="nav-item">
                     <a class="nav-link" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#experience" >Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#contact">Contact</a>
@@ -81,7 +85,7 @@
                                 <a alt="Linkedin" title="Linkedin" href="https://www.linkedin.com/in/willie-david-jones-iii-007" target="_blank"><i class="fab fa-linkedin-in fa-2x icon-module"></i></a>
                             </div>
                             <div class="subheading">
-                                <a href="#contact">CONTACT ME </a>  · <a href="https://drive.google.com/open?id=14eQp_yKHHh2gGZ9q7Ab-7HFNZ8Vmo0UL" target="_blank">DOWNLOAD RESUME</a>
+                                <a href="#contact">CONTACT ME </a>  · <a href="/static/wdjiii_dev_resume.pdf" target="_blank">VIEW RESUME</a>
                             </div>
                         </div>
                     </div>
@@ -93,24 +97,65 @@
                       <h4 class="Heebo-font-Thin left-row-text" style="text-align: center;">ABOUT ME</h4>
                     </div>
                     <div class="col-sm-8">
-                        <p id="experience" id="longParagraph">Well hello there! My name is Willie and I'm a Citrix IT Support Svcs Analyst II at
+                        <p id="longParagraph">Well hello there! My name is Willie and I'm a Citrix IT Support Svcs Analyst II at
                             <a href="https://www.aig.com" >AIG</a> and a contractor web developer at
                             <a href="http://whjsc.org">WHJESP</a>. Before now, I worked at 
                             Freedmaxick CPA's, Caplugs, Wednt Corporation, and
-                            graduated from SUNY Buffalo State in 2015. <br><br>
-                            In my spare time I love playing video games, sports, traveling, enhancing my coding skills and being a big foodie.
+                            graduated from SUNY Buffalo State in 2015. 
                             <br>
                             <br>
                             In terms of where I am on the internet (and off), you might have seen me in
                             <a  href="https://buffstaterecord.com/6278/culture/alum-helps-students-find-jobs-with-new-website/" >The Record</a> or the
                             <a href="https://buffalonews.com/2015/11/18/on-the-record-nov-19-2015/">The Buffalo News</a> a few years back. I created a job board
                             for Western New York.
-                            If you like to get know me more, feel free to <a href="#contact">email me</a>! <br>
+                            If you like to get know me more, feel free to <a href="#contact">email me</a>!
+                            <br>
+                            <br>
+                            In my spare time I love playing video games, sports, traveling, enhancing my coding skills and being a big foodie.
                     </div>
                 </div>
             </section>
-            <div class="solid-line"></div>
-            <section class="experience rowpad" >
+            <div class="solid-line" id="skills"></div>
+            <section class="skills rowpad">
+                <div class="row">
+                    <div class="col-sm-4">
+                      <h4 class="left-row-text" style="text-align: center;">SKILLS</h4>
+                    </div>
+                    <div class="col-sm">
+                        <ul>
+                            <ol class="bold">LANGUAGES</ol>
+                            <ol>JavaScript</ol>
+                            <ol>Python</ol>
+                            <ol>HTML5</ol>
+                            <ol>CSS3</ol>
+                            <ol>SQL</ol>
+                        </ul>
+                    </div>
+                    <div class="col-sm">
+                        <ul>
+                            <ol class="bold">FRAMEWORKS</ol>
+                            <ol>Flask</ol>
+                            <ol>Bootstrap</ol>
+                            <ol>Wordpress</ol>
+                        </ul>
+                    </div>
+                    <div class="col-sm">
+                        <ul>
+                            <ol class="bold">TOOLS</ol>
+                            <ol>AWS</ol>
+                            <ol>Digital Ocean</ol>
+                            <ol>Bash</ol>
+                            <ol>Git & Github</ol>
+                            <ol>Chrome DevTools</ol>
+                            <ol>Jira</ol>
+                            <ol>Confluence</ol>
+                            <ol>ServiceNow</ol>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <div class="solid-line" id="experience"></div>
+            <section class="experience rowpad">
                 <div class="row">
                     <div class="col-sm-4">
                       <h4 class="Heebo-font-Thin left-row-text " style="text-align: center;">EXPERIENCE</h4>
@@ -139,8 +184,8 @@
                     </div>
                 </div>
             </section>
-            <div class="solid-line"></div>
-            <section class="projects rowpad" >
+            <div class="solid-line" id="projects"></div>
+            <section class="projects rowpad">
                 <div class="row">
                     <div class="col-sm-4">
                       <h4 class="Heebo-font-Thin left-row-text" style="text-align: center;">PROJECTS</h4>
@@ -148,52 +193,49 @@
                     <div class="col-sm-8">
                         <div class="inner-div">
                             <a class="inner-link text-nowrap" href="http://williedavidjonesiii.com" target="_blank">Willie David Jones III</a>
-                            <p>A minimal single-page app portfolio built on Flask, Python, Bootstrap, JavaScript and Jinja.  </p>
+                            <p>Designed and developed a minimal single-page app portfolio.</p>
                             <p>🔗 <a class="" href="http://williedavidjonesiii.com" target="_blank">http://williedavidjonesiii.com</a></p>
-                            <a class="btn btn-light" href="https://github.com/wjone005/portfolio" target="_blank" role="button"><i class="fab fa-github"></i> Github Source Code</a>
+                            <a style="margin-bottom: 20px;" class="btn btn-light" href="https://github.com/wjone005/portfolio" target="_blank" role="button"><i class="fab fa-github"></i> Github Source Code</a>
+                            <div>
+                                <span class="usedTechnology">Flask</span>
+                                <span class="usedTechnology">Python</span>
+                                <span class="usedTechnology">Bootstrap</span>
+                                <span class="usedTechnology">Javascript</span>
+                                <span class="usedTechnology">Jinja</span>
+                                <span class="usedTechnology">HTML5</span>
+                                <span class="usedTechnology">SendGrid API</span>
+                            </div>
                         </div>
                         <div class="inner-div">
                             <a class="inner-link" href="https://wjone005.github.io/Etch-A-Sketch/" target="_blank">Etch A Sketch</a>
                             <p>Website where you can sketch with your mouse, change the tile colors and amount of your choice.</p>
                             <p>🔗 <a class="" href="https://wjone005.github.io/Etch-A-Sketch/" target="_blank">https://wjone005.github.io/Etch-A-Sketch/</a></p>
-                            <a class="btn btn-light" href="https://github.com/wjone005/Etch-A-Sketch" target="_blank" role="button"><i class="fab fa-github"></i> Github Source Code</a>
+                            <a style="margin-bottom: 20px;" class="btn btn-light" href="https://github.com/wjone005/Etch-A-Sketch" target="_blank" role="button"><i class="fab fa-github"></i> Github Source Code</a>
+                            <div>
+                                <span class="usedTechnology">Javascript</span>
+                                <span class="usedTechnology">CSS3</span>
+                                <span class="usedTechnology">HTML5</span>
+                            </div>
                         </div>
-                        <div class="inner-div " id="skills">
+                        <div class="inner-div">
                             <a class="inner-link" href="https://wjone005.github.io/ios-iPhone-Calculator/" target="_blank">iOS iPhone Calculator Clone</a>
-                            <p>An iOS iPhone clone web app. This project is still in progress.</p>
+                            <p>An iOS iPhone clone web app.</p>
                             <p>🔗 <a class="" href="https://wjone005.github.io/ios-iPhone-Calculator/" target="_blank">https://wjone005.github.io/ios-iPhone-Calculator/</a></p>
-                            <a class="btn btn-light" href="https://github.com/wjone005/ios-iPhone-Calculator" target="_blank" role="button"><i class="fab fa-github"></i> Github Source Code</a>
+                            <a style="margin-bottom: 20px;" class="btn btn-light" href="https://github.com/wjone005/ios-iPhone-Calculator" target="_blank" role="button"><i class="fab fa-github"></i> Github Source Code</a>
+                            <div>
+                                <span class="usedTechnology">Javascript</span>
+                                <span class="usedTechnology">CSS3</span>
+                                <span class="usedTechnology">HTML5</span>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </section>
-            <div class="solid-line"></div>
-            <section class="skills rowpad">
-                <div class="row">
-                    <div class="col-sm-4">
-                      <h4 class="left-row-text" style="text-align: center;">SKILLS</h4>
-                    </div>
-                    <div class="col-sm-8">
-                        <div class="inner-div">
-                            <h4>Languages & Frameworks</h4>
-                            <p >JavaScript, Python, Flask, Jinja, Bootstrap, HTML5, CSS</p>
-                        </div>
-                        <div class="inner-div">
-                            <h4>Databases</h4>
-                            <p>MySQL, SQLAlchemy</p>
-                        </div>
-                        <div class="inner-div">
-                            <h4>Other</h4>
-                            <p>Amazon Web Services, Digital Ocean, Git, Wordpress, ssh</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            </section>         
             <div class="solid-line" id="contact"></div>
             <section>
                 <div class="contact" >
                     {% block contact %}
-                        <h4 class="left-row-text" style="text-align: center;"> Contact Me </h4>
+                        <h4 class="left-row-text" style="text-align: center;">CONTACT ME</h4>
 
                         <form class="justify-content-center" novalidate  action="{{ url_for('home') }}" method="POST" name="contact" role="form"> 
                             {{ form.hidden_tag() }}
@@ -259,8 +301,10 @@
                             <div class="form-group">
                                 {{ form.recaptcha }}
                             </div>
-
-                            {{ form.submit(class="btn btn-primary") }}
+                            <div class="text-center">
+                                {{ form.submit(class="btn btn-primary") }}
+                            </div>
+                            
 
                             {% with messages = get_flashed_messages(with_categories=true) %}
                                 {% if messages %}

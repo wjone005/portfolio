@@ -13,17 +13,28 @@ img {
 }
 
 .content-header {
-  margin: 15px 0 0 50px
+  margin: 15px 0 0 50px;
 }
 
 .rowpad {
-  padding-bottom: 80px 
+  padding-bottom: 80px; 
 }
 
-
+.bold {
+  font-weight: bold;
+}
 
 .content {
   padding-top: 70px !important; 
+}
+
+.usedTechnology {
+  color: #007bff;
+  border: 1px solid #007bff;
+  border-radius: 3px;
+  font-size: .75rem;
+  background: 0 0;
+  padding: 2px 7px;
 }
 
 .icon-module {
