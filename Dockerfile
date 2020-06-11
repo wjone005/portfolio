@@ -1,8 +1,7 @@
-FROM alpine:latest
+FROM python:3
 MAINTAINER Willie David Jones III "Williejones005@gmail.com"
 
-RUN apk add --no-cache python3-dev \
- && pip3 install --upgrade pip
+RUN pip install --upgrade pip
 
 WORKDIR /
 
